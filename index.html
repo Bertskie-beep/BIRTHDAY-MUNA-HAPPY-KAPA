@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b3d68">
+  <title>A Special Birthday Wish 💙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <main class="page-shell">
+    <header class="topline">
+      <span class="brand-mark">✦</span>
+      <span>A LITTLE BIRTHDAY SURPRISE</span>
+      <span class="topline-line"></span>
+    </header>
+
+    <section class="intro" aria-labelledby="main-title">
+      <p class="eyebrow">MADE WITH LOVE, JUST FOR YOU</p>
+      <h1 id="main-title">A day as lovely<br><em>as you are.</em></h1>
+      <p class="intro-copy">A small surprise, a favorite memory, and a wish for a beautiful year ahead.</p>
+    </section>
+
+    <section class="gift-area" aria-label="Birthday gift">
+      <button class="folder" id="folderButton" aria-expanded="false" aria-controls="birthdayLetter">
+        <span class="folder-tab"></span>
+        <span class="folder-label">OPEN YOUR SURPRISE</span>
+        <span class="folder-heart">♡</span>
+        <span class="folder-hint">tap to open</span>
+      </button>
+
+      <article class="letter" id="birthdayLetter" aria-hidden="true">
+        <div class="letter-inner">
+          <div class="letter-top">
+            <span class="mini-label">A NOTE FOR YOU</span>
+            <span class="sparkle">✧ ✦ ✧</span>
+          </div>
+          <div class="photo-frame">
+            <img src="assets/birthday-photo.jpg" alt="A cherished photo for the birthday greeting">
+            <span class="photo-caption">A memory to keep close</span>
+          </div>
+          <p class="greeting">Happy Birthday!</p>
+          <p class="letter-message">
+            May your special day be filled with genuine smiles, peaceful moments,
+            and people who make you feel loved. May this new chapter bring you
+            courage for your dreams, strength for every challenge, and countless
+            little reasons to be thankful.
+          </p>
+          <p class="letter-message second">
+            You deserve a year full of happiness, beautiful memories, and blessings
+            that make your heart smile. Keep shining in your own wonderful way.
+          </p>
+          <p class="signature">Wishing you the very best, <span>always 💙</span></p>
+          <div class="letter-footer">WITH LOVE & BLUE SKIES <span>♡</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="controls" aria-label="Birthday surprise controls">
+      <button class="primary-button" id="songButton"><span id="songIcon">♫</span> Play birthday song</button>
+      <p class="song-note" id="songStatus" aria-live="polite">Turn up the volume for a little birthday melody.</p>
+      <button class="text-button" id="confettiButton">Send a little sparkle ✨</button>
+    </section>
+
+    <footer class="footer">
+      <span>CELEBRATE YOU</span>
+      <span class="footer-dot">•</span>
+      <span>WITH ALL THE BLUE IN THE SKY</span>
+    </footer>
+  </main>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
